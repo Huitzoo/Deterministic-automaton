@@ -1,0 +1,31 @@
+/*alfabeto*/
+
+  Z={a,e,i,o,u}
+
+/*Estados*/
+
+  Q = {q0,q1,q2,q3,q4}
+
+  /* Estados finales */
+
+  F ={q3}
+
+
+/*Transiciones*/
+
+  T*(q0,a) = q1
+
+  T(q1,e) = q2
+
+  T*(q2,i) = q3
+
+  T*(q2,o) = q3
+
+  T(q3,o) = q4
+
+  T*(q4, u) = q3
+
+  /* Acepta cadenas como */
+    aeiou
+    aeo
+    aiu
